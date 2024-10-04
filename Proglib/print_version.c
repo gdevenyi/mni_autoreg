@@ -24,5 +24,5 @@ void  print_version_info( char *version_string )
    
     (void) printf( "%s\n", version_string );
 
-    exit(-1);
+    exit(0);
 }
