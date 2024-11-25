@@ -214,7 +214,7 @@ VIO_BOOL get_cog(char *file, double *c1)
   step[1] = 4.0;
   step[2] = 4.0;
 
-  if ( vol_to_cov(vol, NULL, cog, cov, step ) ) {
+  if ( vol_to_cov(vol, NULL, cog, (float**)cov, step ) ) {
     c1[0] = cog[1];
     c1[1] = cog[2];
     c1[2] = cog[3];
