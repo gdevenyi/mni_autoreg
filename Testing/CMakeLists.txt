@@ -1,9 +1,9 @@
 #TODO convert testing routines from Makefile.am here
 
 
-GET_PROPERTY(xcorr_vol_bin TARGET xcorr_vol PROPERTY LOCATION)
+#GET_PROPERTY(xcorr_vol_bin TARGET xcorr_vol PROPERTY LOCATION)
 LIST(APPEND MINC_TEST_ENVIRONMENT "XCORR_VOL=${xcorr_vol_bin}")
-GET_PROPERTY(minctracc_bin TARGET minctracc PROPERTY LOCATION)
+#GET_PROPERTY(minctracc_bin TARGET minctracc PROPERTY LOCATION)
 LIST(APPEND MINC_TEST_ENVIRONMENT "MINCTRACC=${minctracc_bin}")
 
 STRING(REPLACE ";" " " MY_ENV "${MINC_TEST_ENVIRONMENT}")
