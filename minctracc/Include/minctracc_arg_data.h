@@ -83,7 +83,7 @@ typedef struct {
   double translations[3];
   double quaternions[4];  
   double rotations[3];
-  double weights[12];        /* optimization weighting function with quaternions */
+  double weights[13];        /* optimization weighting function with quaternions */
   int invert_mapping_flag;        /* true if input transform maps model to source */
   int rotation_type;            /* type of rotation quaternion used or not */
 } Program_Transformation;

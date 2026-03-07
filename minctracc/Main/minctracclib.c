@@ -257,6 +257,7 @@ void initializeArgs(Arg_Data *args) {
 	args->trans_info.weights[3] = 3.1415927/180.0; args->trans_info.weights[4] = 3.1415927/180.0; args->trans_info.weights[5] = 3.1415927/180.0; 
 	args->trans_info.weights[6] = 0.02; args->trans_info.weights[7] = 0.02; args->trans_info.weights[8] = 0.02; 
 	args->trans_info.weights[9] = 0.02; args->trans_info.weights[10] = 0.02; args->trans_info.weights[11] = 0.02; 
+	args->trans_info.weights[12] = 0.0;
 	args->trans_info.invert_mapping_flag = FALSE;
 	args->trans_info.rotation_type =	TRANS_ROT;
 
