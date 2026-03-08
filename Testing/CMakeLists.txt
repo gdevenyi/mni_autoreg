@@ -1,5 +1,6 @@
 #TODO convert testing routines from Makefile.am here
 
+STRING(REPLACE ";" " " MY_ENV "${MINC_TEST_ENVIRONMENT}")
 
 set_directory_properties( PROPERTIES ENVIRONMENT "${MINC_TEST_ENVIRONMENT}")
 
