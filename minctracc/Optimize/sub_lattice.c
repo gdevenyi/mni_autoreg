@@ -497,7 +497,7 @@ float go_get_samples_with_offset(
       m1++;			/* m1 is rom the mask on the fixed image */
       
     } 
-  
+  }
 
 
                                 /* do the last bits of the similarity function
@@ -607,7 +607,6 @@ float go_get_samples_with_offset(
   
   
   return(r);
-  }
 
 }
 

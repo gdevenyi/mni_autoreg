@@ -351,6 +351,7 @@ int free_features(Feature_volumes *features)
   FREE(features->thresh_data);
   FREE(features->thresh_model);
 
+  return 0;
 }
 
 
