@@ -178,6 +178,11 @@ TARGET_LINK_LIBRARIES(xfm2param
 ADD_EXECUTABLE(crispify     Extra_progs/crispify.c)
 ADD_EXECUTABLE(xcorr_vol    Extra_progs/xcorr_vol.c)
 ADD_EXECUTABLE(cmpxfm       Extra_progs/cmpxfm.c)
+ADD_EXECUTABLE(reversedef   Extra_progs/reversedef.c)
+
+TARGET_LINK_LIBRARIES(reversedef
+  _minctracc
+)
 
 # ADD_EXECUTABLE(make_lvv_vol Extra_progs/make_lvv_vol.c)
 # 
@@ -193,11 +198,12 @@ INSTALL(TARGETS
 # minctracc-e 
  check_scale 
  crispify 
- param2xfm 
- volume_cog 
-#  rand_param 
- xcorr_vol 
- xfm2param 
+ param2xfm
+ volume_cog
+#  rand_param
+ reversedef
+ xcorr_vol
+ xfm2param
 #  zscore_vol
   cmpxfm
 #  make_lvv_vol
