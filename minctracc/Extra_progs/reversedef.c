@@ -66,29 +66,7 @@ static char rcsid[]="$Header: /private-cvsroot/registration/mni_autoreg/minctrac
 
 void print_usage_and_exit(char *pname);
 
-void get_volume_XYZV_indices(VIO_Volume data, int xyzv[]){
-  
-  int 
-    axis, i, vol_dims;
-  char 
-    **data_dim_names;
- 
-  vol_dims       = get_volume_n_dimensions(data);
-  data_dim_names = get_volume_dimension_names(data);
- 
-  for(i=0; i<VIO_N_DIMENSIONS+1; i++) xyzv[i] = -1;
-  for(i=0; i<vol_dims; i++) {
-    if (convert_dim_name_to_spatial_axis(data_dim_names[i], &axis )) {
-      xyzv[axis] = i; 
-    } 
-    else {     /* not a spatial axis */
-      xyzv[VIO_Z+1] = i;
-    }
-  }
-
-  delete_dimension_names(data, data_dim_names);
- 
-}
+void get_volume_XYZV_indices(VIO_Volume data, int xyzv[]);
 
  void  general_transform_point_in_trans_plane(
     VIO_General_transform   *transform,
